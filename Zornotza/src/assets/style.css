@@ -1,0 +1,103 @@
+.fondo {
+  background-color: linear-gradient(#2C698D, #BAE8E8);
+}
+
+
+.class {
+  justify-content: left;
+  align-items: left;
+}
+
+.head {
+  background-color: #3D8ED9;
+  padding: 1vh;
+  text-align: center;
+  border-bottom:1vh solid #2C698D;
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+}
+
+.buho-animation {
+  animation-name: buho-animation;
+  animation-duration: 20s;
+}
+
+@keyframes buho-animation {
+  0% {
+    margin-left: -20%;
+    rotate: 0deg;
+  }
+
+  25% {
+    margin-left: 40%;
+    rotate: 360deg;
+  }
+
+  75% {
+    margin-left: 40%;
+    rotate: 360deg;
+  }
+
+  100% {
+    margin-left: -20%;
+    rotate: 0deg;
+  }
+}
+
+.black_bg_animation {
+  animation-name: black-bg-animation;
+  animation-duration: 22s;
+}
+
+@keyframes black-bg-animation {
+  0% {
+    opacity: 60%;
+    margin-left: 0;
+  }
+
+  75% {
+    opacity: 60%;
+    margin-left: 0;
+  }
+
+  100% {
+    opacity: 0%;
+    margin-left: 0;
+  }
+}
+
+#buho,
+#black_bg {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+
+.title {
+  color: white;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 170%;
+}
+
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+
+}
+
+.texto {
+  border: solid;
+  border-radius: 10px;
+  padding: 2vh;
+}

@@ -1,0 +1,11 @@
+<ion-header class="head">
+  <h3 class="title">ANDRES ESPINOSA</h3>
+</ion-header>
+
+<ion-content>
+  <div style="display: flex;flex: row;justify-content: center;">
+    <div class="ion-canvas" (window:resize)="onResize($event)">
+      <canvas style="border:solid black 2px;" #imageCanvas (touchend)="getUnlicked($event);" (touchstart)="getTouchStart($event);" (touchmove)="getTouchMove($event)" (mousedown)="getClicked($event)" (mousemove)="getMoved($event)" (mouseup)="getUnlicked($event)" ></canvas>
+    </div>
+  </div>
+</ion-content>
